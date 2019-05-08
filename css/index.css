@@ -34,10 +34,11 @@ div.name {
   top: 50px;
   left: 38%;
   word-wrap: break-word;
+  display: inline-block;
 }
 
 /* only for middle screen */
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1400px) {
   div.name {
     left: 45%;
   }
@@ -59,9 +60,19 @@ div.name > p {
 
 /* only for small screen */
 @media only screen and (max-width: 500px) {
+  body {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  div.avatar {
+    left: 10%;
+  }
+
   div.name {
-    left: 32%;
-    top: 110px;
+    left: 45%;
+    top: 55px;
+    display: inline-block;
   }
 
   div.name > span {
@@ -70,6 +81,16 @@ div.name > p {
 
   div.name > p {
     top: 50%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  div.name {
+    left: 45%;
   }
 }
 
@@ -86,9 +107,25 @@ div.brief {
 
 div.details {
   position: absolute;
-  display: block;
-  width: 60%;
+  width: auto;
   left: 30%;
+}
+
+@media only screen and (max-width: 500px) {
+  div#main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  div.brief {
+    width: auto;
+  }
+
+  div.details {
+    position: unset;
+    width: auto;
+    left: 10%;
+  }
 }
 
 section.parts {
