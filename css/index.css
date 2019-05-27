@@ -245,6 +245,14 @@ ul {
   display: inline-block;
 }
 
+.skill-icon {
+  display: inline;
+}
+
+.skill-point {
+  display: inline;
+}
+
 .dot {
   height: 10px;
   width: 10px;
