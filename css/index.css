@@ -234,6 +234,7 @@ ul {
 }
 
 .skill-item {
+  position: relative;
   text-transform: capitalize;
   color: #3b3b3b;
   font-family: Arial, Helvetica, sans-serif;
@@ -249,8 +250,15 @@ ul {
   display: inline;
 }
 
+.skill-type {
+  height: 32px;
+}
+
 .skill-point {
+  position: absolute;
+  top: 10px;
   display: inline;
+  margin-left: 5px;
 }
 
 .dot {
