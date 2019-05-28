@@ -264,21 +264,3 @@ ul {
 .checked {
   color: orange;
 }
-
-.dot {
-  height: 10px;
-  width: 10px;
-  border-radius: 100%;
-  border: #000 solid 1px;
-  background-color: #000;
-  display: inline-block;
-}
-
-.empty-dot {
-  height: 10px;
-  width: 10px;
-  border-radius: 100%;
-  border: #000 solid 1px;
-  background-color: #fff;
-  display: inline-block;
-}
