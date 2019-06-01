@@ -7,19 +7,20 @@ html {
 
 body {
   font-size: 16px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 header#primary {
   position: relative;
   height: 170px;
+  margin-bottom: 50px;
 }
 
 div.avatar {
   position: absolute;
   top: 50px;
-  left: 30%;
+  left: 10%;
 }
 
 div.avatar > img {
@@ -32,7 +33,7 @@ div.name {
   height: 70px;
   width: 210px;
   top: 50px;
-  left: 38%;
+  left: 25%;
   word-wrap: break-word;
   display: inline-block;
 }
@@ -99,26 +100,16 @@ div#main {
   width: 100%;
 }
 
-div.brief {
-  display: block;
-  width: 28%;
-  float: left;
-}
-
 div.details {
   position: absolute;
   width: auto;
-  left: 30%;
+  left: 10%;
 }
 
 @media only screen and (max-width: 500px) {
   div#main {
     display: flex;
     flex-wrap: wrap;
-  }
-
-  div.brief {
-    width: auto;
   }
 
   div.details {
@@ -134,18 +125,18 @@ section.parts {
   padding-right: 5px;
 }
 
-.information {
-  display: block;
-}
-
 section > header {
   text-transform: capitalize;
-  font-family: 'Fjalla One', sans-serif;
+  font-family: "Fjalla One", sans-serif;
   color: #b4a38d;
   font-size: 30px;
 }
 
-section .info-item {
+.info-item {
+  position: absolute;
+  top: 120px;
+  left: 25%;
+  display: inline-grid;
   padding: 0 0 5px 0;
   color: #a3a3a3;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -154,12 +145,23 @@ section .info-item {
   word-break: break-word;
 }
 
+.email::before {
+  content: "\1F4E7";
+}
+
+.mobile-phone::before {
+  content: "\1F4F1";
+}
+
+.address::before {
+  content: "\1F3E2";
+}
+
 section > div > span {
   text-transform: capitalize;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   color: #000;
-  font-weight: bold;
 }
 
 section > div > p {
@@ -172,7 +174,7 @@ section > p {
 
 section .title {
   color: #b4a38d;
-  font-family: 'Fjalla One', sans-serif;
+  font-family: "Fjalla One", sans-serif;
   font-size: 30px;
   text-transform: capitalize;
 }
@@ -229,17 +231,43 @@ section#education section > p {
   margin-bottom: 0;
 }
 
+section#skills {
+  display: grid;
+  grid-column: 4;
+  grid-gap: 5px;
+}
+
 ul {
   padding-inline-start: 15px;
 }
 
 .skill-item {
   position: relative;
-  text-transform: capitalize;
+  width: 110px;
   color: #3b3b3b;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   margin-bottom: 10px;
+}
+
+section#skills div:nth-of-type(1) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+section#skills div:nth-of-type(2) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+section#skills div:nth-of-type(3) {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+section#skills div:nth-of-type(4) {
+  grid-column-start: 4;
+  grid-column-end: 5;
 }
 
 .skill-title {
